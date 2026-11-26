@@ -3,11 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML form</title>
+    <title>HTML form Task</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .btn{
+            padding: 10px; 
+            border-radius: 10px;
+        }
+        .div-btn{
+            display: flex;
+            gap: 250px;
+        }
+    </style>
 </head>
 <body>
-    <form>
+    <section>
+        <h1 style="color: blue;">
+            My Feed Back HTML Form
+        </h1>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" placeholder="your name"> <br><br>
+            <label for="lname">Last Name</label>
+            <input type="text" placeholder="Last Name"> <br><br>
+            <label for="email">Your Email</label>
+            <input type="email" name="email" placeholder="email"><br><br>
+            
+            <label for="sex">What is your sex?</label>
+            <select name="sex" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select> <br>
 
-    </form>
-    
+            <p>
+                <strong>Please select the best options that applies to you:</strong>
+                <ul>
+                    <li>
+                        <label for="student">I am a Student</label>
+                        <input type="radio" name="form">
+                    </li>
+                    <li>
+                        <label for="graduate">I am a Graduate</label>
+                        <input type="radio" name="form">
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                <strong>
+                    Please select the best options that applies to you:
+                </strong>
+
+                <ul>
+                    <li>
+                        <label for="newsletter">Post me newsletter via my Email</label>
+                        <input type="checkbox" name="form">
+                    </li>
+                    <li>
+                        <label for="Whatsapp">Send me messages via my Whatsapp</label>
+                        <input type="checkbox" name="form">
+                    </li>
+                    <li>
+                        <label for="call">Call me when there are offers</label>
+                        <input type="checkbox" name="form">
+                    </li>
+                </ul>
+            </p>
+
+            <p>
+                <strong>
+                    How did you hear about me?
+                </strong>
+                <ul>
+                    <li>
+                        <a href="#facebook">Facebook</a>
+                        <input type="checkbox">
+                    </li>
+                    <li>
+                        <a href="#twitter">Twitter</a>
+                        <input type="checkbox">
+                    </li>
+                    <li>
+                        <a href="#Instagram">Instagram</a>
+                        <input type="checkbox">
+                    </li>
+                    <li>
+                        <a href="#linkedIn">LinkedIn</a>
+                        <input type="checkbox">
+                    </li>
+                </ul>
+            </p>
+
+            <P>
+                <strong>
+                    Thank you for taking your time to fill this form
+                </strong>
+                <div class="div-btn">
+                    <button class="btn" type="submit">Submit</button>
+                    <button class="btn" type="reset">reset</button>
+                </div>
+            </P>
+        </form>
+    </section>
 </body>
