@@ -1,0 +1,53 @@
+body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 
+                        'Lucida Grande', 'Lucida Sans Unicode',
+                        Geneva, Verdana, sans-serif;
+        }
+
+div{
+    padding: 20px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.skill-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.project-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between
+}
